@@ -1,20 +1,20 @@
 {
-    "Group": "HytaleModding",
-    "Name": "ExamplePlugin",
-    "Version": "0.0.0",
-    "Description": "Description of your plugin",
+    "Group": "Exotik850.Haven",
+    "Name": "Currency",
+    "Version": "0.0.1",
+    "Description": "Adds a simple currency system to the game, with a user-friendly GUI.",
     "Authors": [
         {
-            "Name": "Your Name",
-            "Email": "your.email@example.com",
-            "Url": "https://your-website.com"
+            "Name": "Exotik850"
         }
     ],
     "Website": "https://your-plugin-website.com",
     "DisabledByDefault": false,
     "IncludesAssetPack": false,
-    "Dependencies": {},
+    "Dependencies": {
+        "Hytale:EntityStatsModule": "*"
+    },
     "OptionalDependencies": {},
-    "ServerVersion": "*",
-    "Main": "dev.hytalemodding.ExamplePlugin"
+    "ServerVersion": "2026.02.19-1a311a592",
+    "Main": "dev.byt3.haven.currency.CurrencyPlugin"
 }

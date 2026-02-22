@@ -1,4 +1,6 @@
-rootProject.name = "dev.hytalemodding"
+import dev.scaffoldit.hytale.wire.HytaleManifest
+
+rootProject.name = "dev.byt3.haven.currency"
 
 plugins {
     // See documentation on https://scaffoldit.dev
@@ -21,8 +23,15 @@ hytale {
     }
 
     manifest {
-        Group = "HytaleModding"
-        Name = "ExamplePlugin"
-        Main = "dev.hytalemodding.ExamplePlugin"
+        Group = "Exotik850.Haven"
+        Name = "Currency"
+        Main = "dev.byt3.haven.currency.CurrencyPlugin"
+        Description = "Adds a simple currency system to the game, with a user-friendly GUI."
+        Version = "0.0.1"
+        Dependencies = mapOf(
+            "Hytale:EntityStatsModule" to "*"
+        )
+        Authors = listOf(HytaleManifest.Author("Exotik850"))
+        ServerVersion = "2026.02.19-1a311a592"
     }
 }
